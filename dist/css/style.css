@@ -1262,7 +1262,7 @@ label {
     left: 0;
     width: 100%;
     height: 1750px;
-    background: url("dist/src/world.jpg") ;/* #8c999b;*/
+    background: url('dist/src/world.jpg') ;/* #8c999b;*/
     /* background: linear-gradient(57deg, #00C6A7 0%, #1E4D92 100%); */
     -webkit-transform-origin: 1;
     transform-origin: 1;
