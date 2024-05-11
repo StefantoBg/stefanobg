@@ -22,6 +22,12 @@ h1 {
     margin: 0.67em 0
 }
 
+.whiteh2 {
+    font-size: 2em;
+    margin: 0.67em 0;
+    color: rgba(247, 247, 247, 0.801)
+}
+
 figcaption,
 figure,
 main {
