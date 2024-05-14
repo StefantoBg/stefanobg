@@ -130,6 +130,7 @@ input,
 optgroup,
 select,
 textarea {
+
     font-family: sans-serif;
     font-size: 100%;
     line-height: 1.15;
@@ -1193,6 +1194,13 @@ label {
     border-radius: 2px
 }
 
+.button_blue {
+    background-color: #284471;
+    color: #00A2B8 !important;
+    border: none;
+    border-radius: 6px;
+}
+
 .button-shadow {
     position: relative
 }
@@ -1269,7 +1277,8 @@ label {
     left: 0;
     width: 100%;
     height: 1750px;
-    background: url("/dist/src/world.jpg") ;/* #8c999b;*/
+    background: url("/dist/src/world.jpg");
+    /* #8c999b;*/
     /* background: linear-gradient(57deg, #00C6A7 0%, #1E4D92 100%); */
     -webkit-transform-origin: 1;
     transform-origin: 1;
@@ -1440,7 +1449,7 @@ label {
     right: 0;
     bottom: 0;
     left: 0;
-    
+
     box-shadow: 0 16px 48px #E3E7EB;
     mix-blend-mode: multiply
 }
@@ -1470,24 +1479,28 @@ label {
 /* .background-with-opacity {
     background-image: url('/dist/src/hacke2r.jpg');
     background-size: cover; /* Optional: adjust the image size */
-    background-position: center; /* Optional: adjust the image position */
-    opacity: 0.5; /* Adjust opacity level */
-} */
+background-position: center;
+/* Optional: adjust the image position */
+opacity: 0.5;
+/* Adjust opacity level */
+}
+
+*/
 /* 
 .features-extended,.features {
     padding-top: 68px;
     filter: brightness(150%); 
     background: url("/dist/src/hacke2r.jpg") ;/* #8c999b;*/
-    /* background: linear-gradient(57deg, #00C6A7 0%, #1E4D92 100%); */
-    -webkit-transform-origin: 2;
-    transform-origin: 2;
-    
-    
-} */
+/* background: linear-gradient(57deg, #00C6A7 0%, #1E4D92 100%); */
+-webkit-transform-origin: 2;
+transform-origin: 2;
 
-.feature-extended-image,
+
+}
+
+*/ .feature-extended-image,
 .feature-extended-body {
-    
+
     width: 50%
 }
 
@@ -1504,16 +1517,18 @@ label {
     overflow: visible
 }
 
-.feature-extended-body,p,h3 {
+.feature-extended-body,
+p,
+h3 {
     text-align: center;
-    color:rgba(255, 255, 255, 0.795)
+    color: rgba(255, 255, 255, 0.795)
 }
 
 @media (min-width: 641px) {
     .features-extended .section-paragraph {
         padding-left: 72px;
         padding-right: 72px;
-        margin-bottom: 0 ;
+        margin-bottom: 0;
         color: rgba(255, 255, 255, 0.849)
     }
 
@@ -1576,7 +1591,7 @@ label {
     top: 100%;
     left: 0;
     width: 100%;
-    height: 640px;   
+    height: 640px;
     overflow: hidden
 }
 
