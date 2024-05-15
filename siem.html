@@ -28,7 +28,8 @@
   <link href="cover.css" rel="stylesheet">
 </head>
 
-<body class="d-flex h-100 text-center text-bg-dark">
+<body class="d-flex h-100 text-center text-bg-dark"
+  style=" background-size: cover;   background-image: url(new/finger.jpg);;">
 
 
   <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
@@ -37,78 +38,30 @@
       <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
         <use href="#circle-half"></use>
       </svg>
-      <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      <span class="visually-hidden" id="bd-theme-text"></span>
     </button>
-    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
-      <li>
-        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
-          aria-pressed="false">
-          <svg class="bi me-2 opacity-50" width="1em" height="1em">
-            <use href="#sun-fill"></use>
-          </svg>
-          Light
-          <svg class="bi ms-auto d-none" width="1em" height="1em">
-            <use href="#check2"></use>
-          </svg>
-        </button>
-      </li>
-      <li>
-        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
-          aria-pressed="false">
-          <svg class="bi me-2 opacity-50" width="1em" height="1em">
-            <use href="#moon-stars-fill"></use>
-          </svg>
-          Dark
-          <svg class="bi ms-auto d-none" width="1em" height="1em">
-            <use href="#check2"></use>
-          </svg>
-        </button>
-      </li>
-      <li>
-        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
-          aria-pressed="true">
-          <svg class="bi me-2 opacity-50" width="1em" height="1em">
-            <use href="#circle-half"></use>
-          </svg>
-          Auto
-          <svg class="bi ms-auto d-none" width="1em" height="1em">
-            <use href="#check2"></use>
-          </svg>
-        </button>
-      </li>
-    </ul>
+
   </div>
 
 
-  <div class="cover-container d-flex w-50 h-50 p-3 mx-auto flex-column">
+  <div class="cover-container d-flex w-50 h-100% p-3 mx-auto flex-column" style="">
     <header class="mb-auto">
       <div>
-                <h6 class="float-md-start mb-9 ">SIEM with WAZUH</h6>
+
         <ul class="nav navbar-toggler  justify-content-end me-auto mb-2 mb-lg-0">
-          <!-- <li class="nav-item">
-            <a class="button button-sm button-shadow button_blue" aria-current="page" style="  margin-right: 19px;"
-              href="./index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="button button-sm button-shadow button_blue" aria-current="page" style="  margin-right: 19px;"
-              href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="button button-sm button-shadow button_blue" aria-current="page" style="  margin-right: 19px;"
-              href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="button button-sm button-shadow button_blue" aria-current="page" aria-disabled="true">Disabled</a>
-          </li> -->
+
           <li>
-            <a class="button button-sm button-shadow  button_blue" href="./index.html">Home</a>
-        </li>
-        <li>
-            <a class="button button-sm button-shadow button_blue" href="#">About Me</a>
-        </li>
-                                <li>
-            <a class="button button-sm button-shadow button_blue" href="./index.html">Blog</a>
-        </li>
+            <a class="button button-sm button-shadow  button_grey" href="https://wazuh.com"> WAZUH.COM</a><a>
+          </li>
+          <li>
+            <a class="button button-sm button-shadow  button_grey" href="./index.html">Home</a>
+          </li>
+          <li>
+            <a class="button button-sm button-shadow button_grey" href="#">About Me</a>
+          </li>
+          <li>
+            <a class="button button-sm button-shadow button_grey" href="./index.html">Blog</a>
+          </li>
         </ul>
         <!-- <nav class="nav nav-masthead justify-content-center ">
           <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Home</a>
@@ -118,20 +71,134 @@
       </div>
     </header>
 
-    <main class="px-3">
-      <h1>Cover your page.</h1>
-      <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the
-        text, and add your own fullscreen background photo to make it your own.</p>
-      <p class="lead">
-        <a style="  margin-right: 19px;" href="#" class="btn btn-lg btn-light fw-bold border-white bg-white">Learn
-          more</a>
-      </p>
-    </main>
 
-    <footer class="mt-auto text-white-50">
-      <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a
-          href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
-    </footer>
+    <main>
+      <h1 style="display: inline-block;" class="d-flex w-100 h-100% p-3 mx-auto flex-column">How to set up SIEM for
+        monitorig our LAN or Office Network.</h1>
+      <img src="dist/src/wazuh.png" />
+
+
+      <div style=" display: inline-block;max-width: 100% ;background-color: black;"
+        class=" mw-75 d-flex w-57 h-100% p-3 mx-auto flex-column">
+        <div style=" display: inline-block;max-width: 89% ;background-color: black;"
+          class=" mw-75 d-flex w-57 h-100% p-3 mx-auto flex-column">
+          <p class=" fs-5 user-select-none" style="">Anomaly detection in cybersecurity is a monitoring capability used
+            to identify suspicious activity or changes in data or networks. By recognizing unusual patterns of behavior,
+            organizations can detect and isolate abnormal activities that may indicate a security threat. Anomalies can
+            occur in various forms of security data, including network traffic, user behavior, and system resource
+            usage.</p>
+          <p class=" fs-5 user-select-none"> Advanced anomaly detection techniques can help organizations identify
+            potential threats before they
+            escalate. Implementing anomaly detection strategies can assist organizations in enhancing the protection of
+            their networks and data.</p>
+        </div>
+      </div>
+
+      <img src="dist/src/siem/Wazuh_mainpage.png" />
+      <div style=" display: inline-block;max-width: 100% ;background-color: black;"
+        class=" mw-75 d-flex w-57 h-100% p-3 mx-auto flex-column">
+        <p class=" fs-3 user-select-none" style="">Using a simple and easy approach. </p>
+        <p class=" fs-5 user-select-none">First,  download a <a
+            href="https://documentation.wazuh.com/current/deployment-options/virtual-machine/virtual-machine.html">
+            Virtual
+            Machine</a>. In case something goes wrong or gets broken, I can always restart it or rebuild it from
+          scratch. It
+          is simple: when I start it, I just need to set the IP address in my local network. Start the Wazuh - VM via <a
+            href="https://www.virtualbox.org/">"VBox"</a> or <a href="https://www.vmware.com/">"VMWare"</a> </p>
+
+        <p class=" fs-5 user-select-none">Then I can type the address <a
+            href="//192.168.0.110/">http://192.168.0.110/</a>
+          in my browser without using SSL "NO https" and login with admin:admin.</p>
+      </div>
+
+      <div style=" display: inline-block;max-width: 100% ;background-color: black;"
+        class=" mw-75 d-flex w-57 h-100% p-3 mx-auto flex-column">
+        <img style="width: 41em;" src="dist/src/siem/machine.png" />
+        
+
+        
+        <p class=" fs-3 user-select-none" style="">Log into Dashboard. </p>
+        <img style="padding:auto;" src="dist/src/siem/llogin.png" />
+        <div style="height: 1em;"></div>
+        <p class=" fs-3 user-select-none" style="">Then select the Agents Menu </p>
+        <img style="width:100%  ;" src="dist/src/siem/newA.png" />
+
+
+
+        <p class=" fs-5 user-select-none"> I have installed agents on various Windows and Linux systems. Going forward, I will keep a log of activity whenever any of the computers is active. I will also monitor the basic network activity directed towards the computer on which an agent is installed.
+        </a><hr>
+          <p class=" fs-3 user-select-none" style="">Here is how to chose for which platform and just paste it into the terminal. </p>
+          <img style="width:100%  ;" src="dist/src/siem/full.png" />
+          <div style="height: 1em;"></div>
+
+          
+
+          <p class=" fs-3 user-select-none" style="">The following content will show you quick review of Wazuh  <hr> </p>
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <p>Dashboard of Agents installed to each system in the LAN. </p>
+
+                <img src="dist/src/siem/Wazuh_clients.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <p>Discover for spikes and attacks inbound or outbound the Network. </p>
+
+                <img src="dist/src/siem/Wazuh_Discover.png" class="d-block w-100" alt="...">
+
+              </div>
+              
+              <div class="carousel-item">
+                <p>Trace and activity of each AGent installed to the relevant system. </p>
+
+                <img src="dist/src/siem/Wazuh_agents.png" class="d-block w-100" alt="...">
+
+              </div>
+              <div class="carousel-item">
+                <p>This is e Security scan for system hardening</p>
+                <img  src="dist/src/siem/Wazuh_Securityeventspng.png" class="d-block w-100" alt="...">
+                
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            
+          </div>
+          <div style="height: 3em;"></div>
+          <p class=" fs-6 user-select-none"> I have a few agents installed on different Windows and Linux systems. Moving
+            forward, I will have a record of activity whenever one of the computers is active. I will also monitor the
+            basic network activity towards the computer on which I have installed an agent.</a><hr>
+            
+
+
+          <!-- <img style="width:100%  ;" src="dist/src/siem/newA.png" /> -->
+      <footer class="">
+        <p class=" fs-5 user-select-none">Text by <a href="https://stefantoshkov.online/"
+            class="text-white">Stefano</a>, by
+          <a href="https://twitter.com/ToshkovSte35027" class="text-white">@ToshkovSte35027
+          </a>.
+        </p>
+      </footer>
+  </div>
+
+
+
+
+  </main>
+
 </body>
 
 </html>
