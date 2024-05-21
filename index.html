@@ -10,14 +10,6 @@
 </head>
 
 <body class="is-boxed has-animations" id="myid" style=" width: 100%;background: url('dist/src/world.jpg')">
-     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" style="
-    width: 71em;
-    position: absolute;
-    margin-top: 0em;
-    margin-left: 12em;
-    ">
-        <source src="dist/src/vid.mp4" type="video/mp4">
-      </video>
     
     <div class="body-wrap boxed-container" style="    width: 100%; background: url('dist/src/world.jpg') ">
         <header class="site-header">
@@ -54,9 +46,23 @@
         </header>
 
         <main>
-            <section class="hero text-light text-center">
-                <div class="container-sm">
-                    <div class="hero-inner">
+                        <section class="hero text-light text-center">
+                            <video autoplay="" muted="" loop="" style="
+                                   width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        object-fit: cover;
+                        z-index: 0;
+                                " class="background-video">
+                                <source src="dist/src/vid.mp4" type="video/mp4">
+                            </video>
+                            <div class="container-sm" style="position: relative;
+                        z-index: 1; ">
+                    
+                    
+                                <div class="hero-inner">
                         <h1 class="hero-title h2-mobile mt-0 is-revealing">Cyber Security and Web Development </h1>
                         <p class="hero-paragraph is-revealing">Welcome to my website, where you will find everything you
                             need to stay informed and secure in the ever-changing world of cybersecurity. Our labs
